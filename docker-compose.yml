@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  database:
+    container_name: database-exchange-test
+    image: postgis/postgis:13-master
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: 'root'
+      POSTGRES_PASSWORD: 'root'
+      POSTGRES_DB: 'root'

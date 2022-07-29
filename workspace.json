@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "exchange-api": "apps/exchange-api",
+    "frontend": "apps/frontend"
+  }
+}

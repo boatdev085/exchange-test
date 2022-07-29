@@ -1,0 +1,27 @@
+{
+    "root": "apps/exchange-api",
+    "sourceRoot": "apps/exchange-api/src",
+    "projectType": "application",
+    "targets": {
+        "build": {
+            "builder": "@nx-go/nx-go:build",
+            "options": {
+                "outputPath": "dist/apps/exchange-api",
+                "main": "apps/exchange-api/src/main.go"
+            }
+        },
+        "serve": {
+            "builder": "@nx-go/nx-go:serve",
+            "options": {
+                "main": "apps/exchange-api/src/main.go"
+            }
+        },
+        "test": {
+            "builder": "@nx-go/nx-go:test"
+        },
+        "lint": {
+            "builder": "@nx-go/nx-go:lint"
+        }
+    },
+    "tags": []
+}
